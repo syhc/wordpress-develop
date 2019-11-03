@@ -49,17 +49,17 @@ AttachmentsBrowser = View.extend(/** @lends wp.media.view.AttachmentsBrowser.pro
 		}
 
 		/*
-		 * For accessibility reasons, place the Inline Uploader before other sections.
-		 * This way, in the Media Library, it's right after the Add New button, see ticket #37188.
-		 */
-		this.createUploader();
-
-		/*
 		 * Create a multi-purpose toolbar. Used as main toolbar in the Media Library
 		 * and also for other things, for example the "Drag and drop to reorder" and
 		 * "Suggested dimensions" info in the media modal.
 		 */
 		this.createToolbar();
+
+		/*
+		 * For accessibility reasons, place the Inline Uploader before other sections.
+		 * This way, in the Media Library, it's right after the Add New button, see ticket #37188.
+		 */
+		this.createUploader();
 
 		// Add a heading before the attachments list.
 		this.createAttachmentsHeading();
